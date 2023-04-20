@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  },
+  "name": "twitter_clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "nodemon":"nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

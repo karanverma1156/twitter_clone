@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+
+            body{
+                max-width: 100vw;
+                margin:0;
+            }
+
+            .nav{
+                border:1px solid black;
+                height:5vw;
+                width:100vw;
+                max-width: 100vw;
+                
+            }
+
+            .nav-content{
+                padding:10px;
+                margin:20px;
+            }
+
+            .nav-content a{
+                float:right;
+            }
+
+            .search_box{
+                position: relative;
+                left:40vw;
+                width:400px;
+                padding:10px;
+                border-radius: 10px;
+                border:none;
+                background-color:#e6e6e6;
+            }
+
+            .main-inputs{
+                border: 3px solid #ccc;
+                padding:10px;
+                width:280px;
+                border-radius: 10px;
+                
+            }
+
+            .edit-form{
+                margin:0 auto;
+                height:500px;
+                width:500px;
+                /* border:1px solid black; */
+            }
+
+            table{
+                border-spacing: 0 30px;
+            }
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class = "nav">
+
+                <div class="nav-content">
+
+                    
+                    <input type = "text" placeholder="Search...." class="search_box">
+            
+
+                </div>
+
+            </div>
+
+            <div class="edit-form">
+
+                <form action ="/editusersub" method="POST">
+
+                    <table>
+
+                        <tr>
+                            <td>Email</td>
+                            <td><input type ="email" value ="<%=data[0].email%>" class="main-inputs" name="email"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type ="number" value ="<%=data[0].mobile%>" class="main-inputs" name="mobile"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" class="main-inputs" name="password" value="<%=data[0].password%>"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="submit" value ="Edit Details"></td>
+                        </tr>
+
+
+                    </table>
+
+                </form>
+
+
+
+            </div>
+
+                                      
+
+        </div>
+
+    </body>
+</html>

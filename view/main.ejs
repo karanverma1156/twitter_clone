@@ -1,0 +1,153 @@
+<html>
+    <head>
+
+        <style type = "text/css">
+
+            body{
+                margin:0;
+            }
+
+            .main{
+                width:100%;
+                max-width: 100vw;
+            }
+
+            .main-container1{
+                float:left;
+                width:48vw;
+                /* border:1px solid black; */
+                /* border-right:1px solid black; */
+                height:100vh;
+                background-image:url('/background.jpg');
+            }
+
+            table{
+                border-spacing: 0 15px;
+            }
+
+            .main-container2{
+                float:left;
+                width:48vw;
+                /* border:1px solid black; */
+                height:100vh;
+            }
+
+            .content_container{
+                text-align: center;
+                position: relative;
+                top:15vh;
+                height:auto;
+                width:80%;
+                margin:0 auto;
+                /* border:1px solid black; */
+            }
+/* 
+            .content_container table{
+                text-align: center;
+            } */
+
+            .main-inputs{
+                border: 3px solid #ccc;
+                padding:10px;
+                width:280px;
+                border-radius: 10px;
+                
+            }
+
+            .btn{
+                margin:10px;
+                width:200px;
+                letter-spacing: .10rem;
+                padding: .75rem 1.25rem;
+                border-radius: 10rem;
+                overflow: hidden;
+                text-transform: uppercase;
+                background-color: #ccc;
+                border:none;
+                transition: all .3s;
+            }
+
+            .btn:hover{
+                color:#fff;
+            }
+            
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class = "main">
+
+            
+            <div class = "main-container1">
+
+            </div>
+
+            <div class = "main-container2">
+
+                <div class = "content_container">
+
+                    <h2><%=msg%></h2>
+
+                    <h1>Join Flicker today</h1>
+
+                    <form action = "/adduser" method="POST">
+
+                        <table align="center">
+
+                            <tr>
+                                <td>Username*</td>
+                                <td><input type = "text" placeholder="Username" name = "username" class = "main-inputs"required></td>
+                            </tr>
+
+                            <tr>
+                                <td>Email Id*</td>
+                                <td><input type = "email" placeholder="Email" name = "email" class = "main-inputs" required></td>
+                            </tr>
+
+                            <tr>
+                                <td>Mobile No.*</td>
+                                <td><input type = "number" placeholder="Mobile No." name = "mobile"  class = "main-inputs" required></td>
+                            </tr>
+
+                            <tr>
+                                <td>Date of Birth*</td>
+                                <td><input type = "date"  name = "dob" class = "main-inputs" required></td>
+                            </tr>
+
+                            <tr>
+                                <td>Date of Registering*</td>
+                                <td><input type = "date" name = "dor" class = "main-inputs" required></td>
+                            </tr>
+
+                            <tr>
+                                <td>Gender*</td>
+                                <td><input type = "radio" name = "gender" value = "male">Male &nbsp; <input type = "radio" name = "gender" value = "female">Female</td>
+                            </tr>
+
+                            <tr>
+                                <td>Password*</td>
+                                <td><input type = "password" placeholder="Username" class = "main-inputs" name = "pass"></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan = "2" align = "center"><input type = "submit"class = "btn" value = "Create Account  "></td>
+                            </tr>
+
+                        </table>
+
+                            <p>Have an account already?</p>
+                            <a href = "/login">Log in</a>
+
+                    </form>
+
+                </div>  
+
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
